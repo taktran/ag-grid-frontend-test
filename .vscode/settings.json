@@ -1,0 +1,29 @@
+{
+  "editor.insertSpaces": true,
+  "editor.tabSize": 4,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.associations": {
+    "*.mdoc": "markdown"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.exclude": {
+    "**/vitest.config.*.timestamp*": true,
+    "**/.git": true,
+    "**/.DS_Store": true
+  },
+  "[scss]": {
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.watcherExclude": {
+    "**/.nx/**": true,
+    "**/dist/**": true,
+    "**/node_modules/**": true
+  }
+}

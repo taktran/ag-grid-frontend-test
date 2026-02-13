@@ -1,14 +1,20 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "include": [
-    ".astro/types.d.ts",
-    "**/*"
-  ],
-  "exclude": [
-    "dist"
-  ],
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"],
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "react"
+  },
+  // Import aliases
+  "baseUrl": ".",
+  "paths": {
+    "@components/*": ["src/components/*"],
+    "@design-system/*": ["src/ag-website-shared/src/design-system/*"],
+    "@images/*": ["src/images/*"],
+    "@layouts/*": ["src/layouts/*"],
+    "@utils/*": ["src/utils/*"],
+    "@constants": ["src/constants.ts"],
+    "@ag-website-shared/*": ["src/ag-website-shared/src/*"]
   }
 }
