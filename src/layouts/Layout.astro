@@ -1,0 +1,33 @@
+---
+import dsStylesUrl from '@design-system/design-system.scss?url';
+import SiteHeader from '@ag-website-shared/components/site-header/SiteHeader.astro';
+import styles from '@layouts/Layout.module.scss';
+
+interface Props {
+    title: string;
+}
+
+const {
+    title,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="robots" content="noindex" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+        
+        <!-- Import all global design system CSS -->
+        <link rel="stylesheet" href={dsStylesUrl} />
+    </head>
+    <body>
+        <div id="mainContainer" class:list={styles.mainContainer}>
+            <SiteHeader />
+            <slot />
+        </div>
+    </body>
+</html>

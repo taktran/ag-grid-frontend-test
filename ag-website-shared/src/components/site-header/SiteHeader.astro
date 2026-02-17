@@ -1,0 +1,16 @@
+---
+import styles from './SiteHeader.module.scss';
+import { SiteLogo } from '@components/SiteLogo';
+
+export interface Props {
+    showSearchBar?: boolean;
+    showDocsNav?: boolean;
+    apiPaths?: string[];
+}
+---
+
+<header class:list={[styles.header, 'site-header']}>
+    <div class:list={[styles.headerInner, 'layout-page-max-width']}>
+        <SiteLogo client:load />
+    </div>
+</header>

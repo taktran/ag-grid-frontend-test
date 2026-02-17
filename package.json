@@ -3,17 +3,22 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --port 4688",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
+    "@carbon/icons-react": "^11.75.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "astro": "^5.17.1",
+    "classnames": "^2.5.1",
     "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react-animate-height": "^3.2.3",
+    "react-dom": "^19.2.4",
+    "sass": "^1.77.8",
+    "vite-plugin-svgr": "^4.5.0"
   }
 }
