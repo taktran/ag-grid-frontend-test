@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/node": "^9.5.3",
     "@astrojs/react": "^4.4.2",
     "@carbon/icons-react": "^11.75.0",
     "@types/react": "^19.2.14",
@@ -19,6 +20,7 @@
     "react-animate-height": "^3.2.3",
     "react-dom": "^19.2.4",
     "sass": "^1.77.8",
-    "vite-plugin-svgr": "^4.5.0"
+    "vite-plugin-svgr": "^4.5.0",
+    "zod": "^3.25.76"
   }
 }

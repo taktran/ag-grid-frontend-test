@@ -17,6 +17,7 @@ It is built on the [Astro web framework](https://astro.build/).
 |   └── components/ - Astro/React components
 |   └── layouts/ - Layout components
 │   └── pages/ - Astro pages
+│       └── api/ - API endpoints
 ```
 
 ## Development
@@ -25,3 +26,25 @@ It is built on the [Astro web framework](https://astro.build/).
 2. Run the development server: `npm run dev`
 
    Open http://localhost:4688/
+
+## API Endpoints
+
+### `/api/contact` - Contact form endpoint
+
+Success response - Status: `200`
+
+```json
+{
+  "name": "",
+  "message": ""
+}
+```
+
+Error response - Status: `500`
+
+```json
+{
+  "name": "error",
+  "message": ""
+}
+```
