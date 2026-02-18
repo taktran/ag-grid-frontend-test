@@ -29,22 +29,13 @@ It is built on the [Astro web framework](https://astro.build/).
 
 ## API Endpoints
 
-### `/api/contact` - Contact form endpoint
+### `POST /api/contact` - Contact form endpoint
 
-Success response - Status: `200`
-
-```json
-{
-  "name": "",
-  "message": ""
-}
-```
-
-Error response - Status: `500`
+Body
 
 ```json
 {
-  "name": "error",
-  "message": ""
+  "name": "Someone",
+  "message": "Hello there"
 }
 ```
